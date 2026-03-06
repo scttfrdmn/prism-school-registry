@@ -1,0 +1,79 @@
+name: Register Institution
+description: Add your school's AWS portal to the Prism registry
+labels: ["new-school"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to the Prism school registry!
+        Please fill in the details below and we'll add your institution.
+
+  - type: input
+    id: name
+    attributes:
+      label: Institution Full Name
+      description: The official full name of the institution
+      placeholder: e.g. Massachusetts Institute of Technology
+    validations:
+      required: true
+
+  - type: input
+    id: short_name
+    attributes:
+      label: Short Name / Abbreviation
+      description: Common abbreviation used by students and staff
+      placeholder: e.g. MIT
+
+  - type: input
+    id: portal_url
+    attributes:
+      label: AWS Account Request URL
+      description: The URL where researchers request institutional AWS accounts
+      placeholder: https://example.edu/aws-portal
+    validations:
+      required: true
+
+  - type: input
+    id: email_domains
+    attributes:
+      label: Email domain(s)
+      description: Comma-separated list of institutional email domains
+      placeholder: e.g. mit.edu, csail.mit.edu
+    validations:
+      required: true
+
+  - type: input
+    id: state_country
+    attributes:
+      label: State / Country
+      description: US state abbreviation (for US) or ISO country code
+      placeholder: e.g. MA (for Massachusetts) or GB (for United Kingdom)
+
+  - type: dropdown
+    id: aws_program
+    attributes:
+      label: AWS Program Type
+      description: What AWS program does your institution use?
+      options:
+        - enterprise (Enterprise Customer Agreement)
+        - educate (AWS Educate)
+        - research_credits (Research credit grant program)
+        - research (Research computing / HPC credits)
+        - other
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes for researchers
+      description: Any helpful context for researchers requesting an account (login requirements, credit amounts, restrictions, etc.)
+      placeholder: e.g. Log in with your university SSO. Up to $500 in credits for graduate students.
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      options:
+        - label: I have personally verified that this portal URL is active and working
+          required: true
