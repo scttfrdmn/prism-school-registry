@@ -1,0 +1,113 @@
+# Prism School Registry
+# Community-maintained list of institutional AWS portal URLs
+# Format: see https://github.com/scttfrdmn/prism-school-registry#contributing
+
+version: "1"
+schools:
+  - id: "mit"
+    name: "Massachusetts Institute of Technology"
+    short_name: "MIT"
+    country: "US"
+    state: "MA"
+    email_domains: ["mit.edu"]
+    aws_portal_url: "https://cloud-accounts.mit.edu/"
+    aws_program: "enterprise"
+    notes: "IS&T manages AWS/GCP/Azure accounts. Request via cloud accounts portal."
+    verified: true
+    last_verified: "2026-03"
+
+  - id: "stanford"
+    name: "Stanford University"
+    short_name: "Stanford"
+    country: "US"
+    state: "CA"
+    email_domains: ["stanford.edu"]
+    aws_portal_url: "https://uit.stanford.edu/service/cloudacctmgmt"
+    aws_program: "enterprise"
+    notes: "Use SUNet ID. Supports Low/Moderate/High Risk Data workloads."
+    verified: true
+    last_verified: "2026-03"
+
+  - id: "uw"
+    name: "University of Washington"
+    short_name: "UW"
+    country: "US"
+    state: "WA"
+    email_domains: ["uw.edu", "u.washington.edu"]
+    aws_portal_url: "https://escience.washington.edu/software-engineering/cloud/aws-credits/"
+    aws_program: "research_credits"
+    notes: "eScience Institute + UW IT Research Computing offer up to $10,000 in credits."
+    verified: true
+    last_verified: "2026-03"
+
+  - id: "uci"
+    name: "University of California, Irvine"
+    short_name: "UC Irvine"
+    country: "US"
+    state: "CA"
+    email_domains: ["uci.edu"]
+    aws_portal_url: "https://www.oit.uci.edu/aws-credits-portal/"
+    aws_program: "educate"
+    notes: "Log in with UCI credentials; auto-provisioned with $25 credits (launched 2025)."
+    verified: true
+    last_verified: "2026-03"
+
+  - id: "buffalo"
+    name: "University at Buffalo"
+    short_name: "UB"
+    country: "US"
+    state: "NY"
+    email_domains: ["buffalo.edu"]
+    aws_portal_url: "https://www.buffalo.edu/ubit/service-guides/teaching-technology/aws.html"
+    aws_program: "educate"
+    notes: "UB participates in AWS Educate; register with buffalo.edu email at awseducate.com."
+    verified: true
+    last_verified: "2026-03"
+
+  - id: "princeton"
+    name: "Princeton University"
+    short_name: "Princeton"
+    country: "US"
+    state: "NJ"
+    email_domains: ["princeton.edu"]
+    aws_portal_url: "https://researchcomputing.princeton.edu/systems/cloud-computing"
+    aws_program: "research"
+    notes: "Log into ServiceNow and complete the Request Access to Cloud Infrastructure form."
+    verified: true
+    last_verified: "2026-03"
+
+  - id: "uva"
+    name: "University of Virginia"
+    short_name: "UVA"
+    country: "US"
+    state: "VA"
+    email_domains: ["virginia.edu"]
+    aws_portal_url: "https://www.rc.virginia.edu/service/cloud/"
+    aws_program: "research"
+    notes: "Request through UVA ITS Research Computing."
+    verified: true
+    last_verified: "2026-03"
+
+  - id: "usc"
+    name: "University of Southern California"
+    short_name: "USC"
+    country: "US"
+    state: "CA"
+    email_domains: ["usc.edu"]
+    aws_portal_url: "https://www.carc.usc.edu/user-guides/cloud-computing/aws-account-setup"
+    aws_program: "enterprise"
+    notes: "USC has an Enterprise Customer Agreement with DLT Solutions/AWS."
+    verified: true
+    last_verified: "2026-03"
+
+  - id: "wlu"
+    name: "Washington and Lee University"
+    short_name: "W&L"
+    country: "US"
+    state: "VA"
+    email_domains: ["wlu.edu"]
+    aws_portal_url: "https://my.wlu.edu/its/services/research-computing/amazon-web-services"
+    aws_program: "enterprise"
+    notes: "ITS creates enterprise accounts; provide a funding source when requesting."
+    verified: true
+    last_verified: "2026-03"
